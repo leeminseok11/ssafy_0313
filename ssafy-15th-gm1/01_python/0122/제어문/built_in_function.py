@@ -1,0 +1,67 @@
+# 아래 내장함수를 함수로 정의 하시오.
+arr = [3, 2, 1, 4, 5, 22]
+
+# len 
+def my_len(arr):
+    cnt = 0 # 카운트변수
+    for _ in arr:
+        cnt += 1
+    return cnt
+    # return len(arr)
+
+print(len(arr))
+print(my_len(arr))
+
+# sum
+def my_sum(arr):
+    total = 0
+    for num in arr:
+        total += num
+    return total
+
+print(sum(arr))
+print(my_sum(arr))
+print(my_sum(arr) / my_len(arr) )
+
+# min
+def my_min(arr):
+    min_v = arr[0]   # 또는 아주 큰값 987654321
+    for num in arr:
+        if min_v > num:
+            min_v = num
+    return min_v
+
+print(min(arr))
+print(my_min(arr))
+
+# max
+def my_max(arr):
+    max_v = arr[0]  # 또는 아주 작은 값 -987654321
+    for num in arr:
+        if max_v < num:
+            max_v = num
+    return max_v
+
+def my_max_index(arr):
+    max_i = 0
+    for i in range(len(arr)):
+        if arr[max_i] < arr[i]:
+            max_i = i
+    return max_i
+
+print(max(arr))
+print(my_max(arr))
+# 최대값의 인덱스, 최소값의 인덱스
+print(arr[my_max_index(arr)])
+
+# 중복제거
+def my_set(arr):
+    result = []
+    for num in arr:
+        if num not in result:
+            result.append(num)
+    return result
+
+arr = [1, 3, 4, 1, 3, 2, 5]
+print(list(set(arr)))
+print(my_set(arr))

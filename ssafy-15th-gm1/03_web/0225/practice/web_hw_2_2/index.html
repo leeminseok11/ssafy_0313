@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card{
+      width: 350px;
+      height: 550px;
+      border: 1px solid black;
+      text-align: center;
+      padding: 15px;
+    }
+    /* position: absoluter 기준이 되는 요소 */
+    .card-header{
+      position: relative;
+    }
+
+    .card-header > img {
+      width: 100%;
+    }
+    .card-header > p {
+      width: 100%;
+      position: absolute;
+      margin: 0;
+      bottom: 4px;
+      background-color: #FFCBA3;
+      padding: 5px 0;
+      font-size: 32px;
+      font-weight: bold;
+      opacity: 90%;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <img src="profile.jpg" alt="Profile Image">
+      <p>Name</p>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil ipsam, sequi eligendi illum nisi dolorem totam possimus, vitae voluptate a laborum accusantium. Aliquid ad veritatis, perspiciatis quasi possimus quis?</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# 실수 자료형
+pi = 3.14
+weight = 65.5
+tax_rate = 0.1
+
+# 지수 표현
+# 1,230,000,000 (1.23 * 10^9)
+# big_number = 1.23e9
+big_number = 1.23E9
+print(big_number)
+print(type(big_number))
+# 0.00314 (3.14 * 10^-3)
+small_number = 3.14e-3
+num = 0e0  # 0.0
